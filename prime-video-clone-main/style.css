@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar css */
+
+#navbar-custom {
+  background-color: black;
+  color: white;
+}
+#navbar-custom ul {
+  font-weight: 500;
+}
+.fa-angle-down {
+  display: inline;
+}
+.user-icon {
+  padding: 5px;
+  border-radius: 45%;
+}
+.user-icon:hover {
+  cursor: pointer;
+}
+.search-icon:hover {
+  cursor: pointer;
+}
+/* content css  */
+.card-custom {
+  border-radius: 0;
+}
+.card-custom img {
+  opacity: 0.7;
+  min-height: 100vh;
+}
+
+.card-custom button {
+  border-radius: 0;
+  font-weight: 600;
+}
+.after-image {
+  margin-top: 96px;
+}
+
+.after-image .card-title{
+  font-size: 5rem !important;
+  text-align: center;
+  font-weight: 800;
+}
+.after-image p{
+  text-align: center;
+}
+
+.after-image .d-grid{
+  margin: 0 auto;
+}
+
+
+
+/* movie rental css */
+.movie-rental {
+  position: relative;
+}
+.rental-image {
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  margin-top: 96px;
+  float: right;
+}
+
+.movie-rental .card-img {
+  max-height: 100vh;
+  border-radius: 0;
+}
+.movie-rental button {
+  border-radius: 0;
+  font-weight: 600;
+}
+
+.movie-rental h3,
+.movie-rental p {
+  font-weight: 360;
+}
+/* favorite channels css */
+.fav-channels h3,
+.fav-channels p {
+  font-weight: 360;
+}
+.channel img {
+  width: 183px;
+}
+.channel img:hover {
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+/* remote section css */
+.remote-section {
+  margin-top: 80px;
+}
+
+.remote-img {
+  width: 100%;
+  mix-blend-mode: multiply;
+  transform: rotate(340deg);
+}
+
+.remote-section h3,
+.remote-section p {
+  font-weight: 360;
+}
+.remote-section button {
+  border-radius: 0;
+}
+
+/* footer */
+footer {
+  position: relative;
+}
+.arrow-img img {
+  position: absolute;
+  top: -80px;
+  left: 90%;
+  width: 60px;
+  mix-blend-mode: multiply;
+  color: white;
+}
+.arrow-img img:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+/* media queries for mobile*/
+@media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* navbar css */
+  .navbar-toggler-icon {
+    color: white !important;
+  }
+  #navbar-custom .prime-video {
+    position: relative;
+    left: 10%;
+  }
+  .arrow-img img {
+    left: 78%;
+    width: 52px;
+  }
+  /* content css */
+  .card-custom img {
+    opacity: 0.7;
+    min-height: 22vh;
+  }
+
+  .after-image {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  .after-image .card-title{
+    font-size: 1.5rem !important;
+  }
+
+  .after-image p, .after-image .d-grid{
+    margin-top: 0 !important;
+  }
+  .after-image .card-text {
+    font-size: 10px !important;
+  }
+  .card-custom .btn {
+    font-size: 10px !important;
+  }
+  /* movie rentals */
+  .movie-rental .card-title {
+    font-size: 1rem !important;
+  }
+  .movie-rental .rental-image {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+  }
+  .movie-rental .card-text {
+    font-size: 10px !important;
+  }
+  .movie-rental .btn {
+    font-size: 10px;
+  }
+  .movie-rental .d-grid {
+    margin-top: 0 !important;
+  }
+  /* fav-channels */
+  .fav-channels h3 {
+    font-size: 1rem !important;
+  }
+  .fav-channels h3 br,
+  .fav-channels p br {
+    display: none;
+  }
+  .fav-channels p {
+    font-size: 10px !important;
+    margin-top: 0 !important;
+  }
+  .channel img {
+    width: 100%;
+  }
+  /* remote section */
+  .remote-section {
+    margin-top: 1rem;
+  }
+  .remote-section .row {
+    flex-direction: column-reverse;
+  }
+  .remote-section h3 {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+  .remote-section p {
+    font-size: 10px !important;
+    text-align: center;
+  }
+  .remote-img {
+    margin-top: 2rem;
+  }
+}
+/* media queries for tablet */
+@media only screen and (min-width: 768px) and (max-width:1024px){
+  /* content css */
+  .card-custom img{
+    min-height: 100%;
+    width: 100%;
+  }
+  .after-image{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .after-image h3,.rental-image h3, .fav-channels h3, .remote-section h3{
+    font-size: 22px !important;
+  }
+  .after-image p,.rental-image p, .fav-channels p, .remote-section p{
+    font-size: 1rem !important;
+  }
+  .after-image .card-title {
+    font-size: 3rem !important;
+  }
+  .after-image p{
+    margin-top: 0;
+  }
+  .after-image .d-grid{
+    margin-top: 0 !important;
+  }
+  /* rental css */
+  .rental-image{
+    margin-top: 0;
+  }
+  .movie-rental .image-container{
+    max-height: 100% !important;
+    max-width: 100%;
+  }
+  .rental-image .d-grid{
+    margin-top: 0 !important;
+  }
+  /* fav-channels */
+  .channel img {
+    width: 100%;
+    height: 100%;
+  }
+  .arrow-img img {
+    left: 86%;
+    width: 54px;
+  }
+}
