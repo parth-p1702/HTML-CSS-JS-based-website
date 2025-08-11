@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping site in India: Shop</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+        <div class="nav-address border">
+          <p id="add-fis">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p id="add-sec">India</p>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input placeholder="Search Amazon" class="search-input" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="div-singin border">
+          <p><span>Hello, sign in</span></p>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+        <div class="div-return border">
+          <p><span>Returns</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Customer Service</p>
+          <p>Registry</p>
+          <p>Gift Cards</p>
+          <p>Sell</p>
+        </div>
+        <div class="panel-deal">
+          <p>Shop deal in Electronics</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="hero-msg">
+          <p>
+            You are on amazon.com. You can also shop on Amazon India for
+            millions of products with fast local delivery.
+            <a>Click here to go to amazon.in</a>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="hero-section">
+          <!-- side show -->
+          <div class="box1">
+            <p>
+              Starting ₹99 | Amazon Brands<br />
+              & more
+            </p>
+            <div class="b1">
+              <div class="b01">
+                <img
+                  src="box1(1).jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Starting ₹299 | Home <br />storage & organization
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b02">
+                  <img
+                    src="box1(2).jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Up to 60% off | Storage & <br />racks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b2">
+              <div class="b03">
+                <img
+                  src="box1(3).jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Starting ₹99 | Toys &<br />
+                  games
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b04">
+                  <img
+                    src="box1(4).jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Up to 60% off | Jackets,<br />
+                    dresses & more
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop1">
+              <p>shop now</p>
+            </div>
+          </div>
+          <div class="box2">
+            <p>Revamp your home in style</p>
+            <div class="b1">
+              <div class="b01">
+                <img
+                  src="box2(1).jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px; margin-top: 5px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Cushion covers, bedsheets & <br />more
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b02">
+                  <img
+                    src="box2(2).jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Figurines, vases & more
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b2">
+              <div class="b03">
+                <img
+                  src="box2(3).jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px; margin-top: 5px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Home storage
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b04">
+                  <img
+                    src="box2(4).jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Lighting solutions
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop2">
+              <p style="margin-top: 50px">Explore all</p>
+            </div>
+          </div>
+          <div class="box3">
+            <p>Starting ₹149 | Headphones</p>
+            <div class="b1">
+              <div class="b01">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px; margin-top: 5px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Starting ₹299 | Home <br />storage & organization
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b02">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Up to 60% off | Storage & <br />racks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b2">
+              <div class="b03">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px; margin-top: 5px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Starting ₹99 | Toys &<br />
+                  games
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b04">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Up to 60% off | Jackets,<br />
+                    dresses & more
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop3">
+              <p style="margin-top: 40px; margin-left: 20px">shop now</p>
+            </div>
+          </div>
+          <div class="box4">
+            <p>Revamp your home in style</p>
+            <div class="b1">
+              <div class="b01">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px; margin-top: 5px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Cushion covers, bedsheets<br />
+                  & more
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b02">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Figurines, vases & more
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b2">
+              <div class="b03">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
+                  alt="image"
+                  width="150px"
+                  height="100px"
+                  style="margin-left: 20px; margin-top: 5px"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    margin-left: 15px;
+                  "
+                >
+                  Home storage
+                </div>
+              </div>
+              <div class="b2">
+                <div class="b04">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+                    alt="image"
+                    width="150px"
+                    height="100px"
+                    style="margin-left: 10px"
+                  />
+                  <div
+                    style="
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                      margin-left: 15px;
+                    "
+                  >
+                    Lighting solutions
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop4">
+              <p style="margin-top: 50px; margin-left: 20px">Explore all</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- bikes -->
+      <section style="background-color: rgb(215, 215, 215)">
+        <div class="bikes">
+          <div class="bike1">
+            <p>
+              No cost EMI up to 24 months | Starting ₹4,433 INR/month*
+              <span
+                style="font-size: 0.9rem; color: darkcyan; margin-left: 15px"
+                >see all offer</span
+              >
+            </p>
+            <div class="bike-image">
+              <div class="b1">
+                <img
+                  src="https://m.media-amazon.com/images/I/31GEH239AIL._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b2">
+                <img
+                  src="https://m.media-amazon.com/images/I/31fMSsn2cpL._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b3">
+                <img
+                  src="https://m.media-amazon.com/images/I/61r7rylEOWL._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b4">
+                <img
+                  src="https://m.media-amazon.com/images/I/617VVyhYS9L._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b5">
+                <img
+                  src="https://m.media-amazon.com/images/I/31QKYTH4pTL._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b6">
+                <img
+                  src="https://m.media-amazon.com/images/I/512JQ+6XadL._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b7">
+                <img
+                  src="https://m.media-amazon.com/images/I/71XjW8+j9ML._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+              <div class="b8">
+                <img
+                  src="https://m.media-amazon.com/images/I/81ThWNfvDWL._AC_SY200_.jpg"
+                  alt=""
+                  width="300px"
+                  height="170px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-bus">
+          <div class="business">
+            <p>
+              Min. 30% off | Top deals in home decor products from Small
+              businesses<span
+                style="font-size: 0.9rem; color: darkcyan; margin-left: 15px"
+                >see all offer</span
+              >
+            </p>
+            <div class="business-img">
+              <div class="b01">
+                <img
+                  src="https://m.media-amazon.com/images/I/817pQoTjKHL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b02">
+                <img
+                  src="https://m.media-amazon.com/images/I/718DSiX9NLL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b03">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Eugcj1NFL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b04">
+                <img
+                  src="https://m.media-amazon.com/images/I/61Xjtrl1bKL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b05">
+                <img
+                  src="https://m.media-amazon.com/images/I/71-DItTtnnL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b06">
+                <img
+                  src="https://m.media-amazon.com/images/I/510e5btO0UL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b07">
+                <img
+                  src="https://m.media-amazon.com/images/I/8117G-lkk-L._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b08">
+                <img
+                  src="https://m.media-amazon.com/images/I/718Sll+V5pL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b09">
+                <img
+                  src="https://m.media-amazon.com/images/I/81Lw41aVtSL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="b010">
+                <img
+                  src="https://m.media-amazon.com/images/I/91zlbmv2JUL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kitchen">
+          <div class="kitchen1">
+            <p>
+              Min. 50% off | Unique kitchen finds | Amazon Brands & more<span
+                style="font-size: 0.9rem; color: darkcyan; margin-left: 15px"
+                >see all offer</span
+              >
+            </p>
+            <div class="kitchen-img">
+              <div class="a1">
+                <img
+                  src="https://m.media-amazon.com/images/I/81mrMggUQnS._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a2">
+                <img
+                  src="https://m.media-amazon.com/images/I/81tOJ3uVe3L._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a3">
+                <img
+                  src="https://m.media-amazon.com/images/I/91Hffht29zL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a4">
+                <img
+                  src="https://m.media-amazon.com/images/I/71O-AV89z5L._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a5">
+                <img
+                  src="https://m.media-amazon.com/images/I/711bfQFRYKL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a6">
+                <img
+                  src="https://m.media-amazon.com/images/I/51tjMeONVoL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a7">
+                <img
+                  src="https://m.media-amazon.com/images/I/81ry+Z3KACL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a8">
+                <img
+                  src="https://m.media-amazon.com/images/I/91GSsGDCKfL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a9">
+                <img
+                  src="https://m.media-amazon.com/images/I/81t2V75ls-L._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a10">
+                <img
+                  src="https://m.media-amazon.com/images/I/91pQ6PQoK2L._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="beauty">
+          <div class="beauty1">
+            <p>
+              Best Sellers in Beauty<span
+                style="font-size: 0.9rem; color: darkcyan; margin-left: 15px"
+                >see all offer</span
+              >
+            </p>
+            <div class="kitchen-img">
+              <div class="a1">
+                <img
+                  src="https://m.media-amazon.com/images/I/51O+J5jnXcL._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a2">
+                <img
+                  src="https://m.media-amazon.com/images/I/41v1L8K+11L._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a3">
+                <img
+                  src="https://m.media-amazon.com/images/I/61ClJoc2JiL._AC_SY200_.jpg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+              <div class="a4">
+                <img
+                  src="https://m.media-amazon.com/images/I/51-G+VRBzHL._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a5">
+                <img
+                  src="https://m.media-amazon.com/images/I/71QBCKSUpdL._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a6">
+                <img
+                  src="https://m.media-amazon.com/images/I/71aJPOi0-ML._AC_SY200_.jpg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+              <div class="a7">
+                <img
+                  src="https://m.media-amazon.com/images/I/51ECtYHLw6L._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a8">
+                <img
+                  src="https://m.media-amazon.com/images/I/61PA2P4KDCL._AC_SY200_.jpg"
+                  alt=""
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <div class="a9">
+                <img
+                  src="https://m.media-amazon.com/images/I/51FRsJvhucL._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a10">
+                <img
+                  src="https://m.media-amazon.com/images/I/71waYmGy3EL._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a11">
+                <img
+                  src="https://m.media-amazon.com/images/I/61ma04zYXpL._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+              <div class="a12">
+                <img
+                  src="https://m.media-amazon.com/images/I/51JY3BnT-6L._AC_SY200_.jpg"
+                  alt=""
+                  width="150px"
+                  height="200px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- movie-ad -->
+        <div class="ad">
+          <img
+            src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/d9d1e99b-5f95-4ab2-ae38-526d8f21d289.jpeg"
+            alt=""
+            style="margin-left: 250px"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="foot1">
+          <h3>Get to Know Us</h3>
+          <br />
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Press Releases</p>
+          <p>Amazon Science</p>
+        </div>
+        <div class="foot2">
+          <h3>Connect with Us</h3>
+          <br />
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+        </div>
+        <div class="foot3">
+          <h3>Make Money with Us</h3>
+          <br />
+          <p>Sell on Amazon</p>
+          <p>Sell under Amazon Accelerator</p>
+          <p>Protect and Build Your Brand</p>
+          <p>Amazon Global Selling</p>
+          <p>Supply to Amazon</p>
+          <p>Become an Affiliate</p>
+          <p>Fulfilment by Amazon</p>
+          <p>Advertise Your Products</p>
+          <p>Amazon Pay on Merchants</p>
+        </div>
+        <div class="foot4">
+          <h3>Let Us Help You</h3>
+          <br />
+          <p>Your Account</p>
+          <p>Returns Centre</p>
+          <p>Recalls and Product Safety Alerts</p>
+          <p>100% Purchase Protection</p>
+          <p>Amazon App Download</p>
+          <p>Help</p>
+        </div>
+      </div>
+      <br /><br />
+      <hr />
+      <div class="amazon-img">
+        <div class="amazon-image">
+          <br /><br />
+          <img src="amazon_logo.png" alt="" width="100px" />
+        </div>
+        <div class="img-india">
+          <p id="logo-india">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+              width="25px"
+              height="20px"
+            />
+            India
+          </p>
+        </div>
+      </div>
+      <div class="footer1">
+        <div class="f1">
+          <h3 style="color: #dddddd">Abebook</h3>
+          <p>Books, art<br />& collectibles</p>
+          <br /><br />
+          <h3 style="color: #dddddd">Shopbop</h3>
+          <p>
+            Desiger<br />
+            Fashion Brands
+          </p>
+        </div>
+        <div class="f2">
+          <h3 style="color: #dddddd">Amazon Web Service</h3>
+          <p>Scalable Cloud<br />Computing Service</p>
+          <br /><br />
+          <h3 style="color: #dddddd">Amazon Business</h3>
+          <p>Everything for<br />Your Business</p>
+        </div>
+        <div class="f3">
+          <h3 style="color: #dddddd">Audible</h3>
+          <p>Downloand<br />Audio Books</p>
+          <br /><br />
+          <h3 style="color: #dddddd">Prime Now</h3>
+          <p>2-Hour Delivery<br />on Everyday Items</p>
+        </div>
+        <div class="f4">
+          <h3 style="color: #dddddd">IMDb</h3>
+          <p>Movies, TV<br />& Celebrities</p>
+          <br /><br />
+          <h3 style="color: #dddddd">Amazon Prime music</h3>
+          <p>100 million song, ad-free<br />Over 15 million podcast episodes</p>
+        </div>
+      </div>
+      <center>
+        <p style="color: #dddddd; margin-top: 50px; line-height: 25px">
+          Conditions of Use & Sale Privacy Notice Interest-Based Ads<br />
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </p>
+      </center>
+    </footer>
+  </body>
+</html>

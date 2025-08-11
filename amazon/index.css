@@ -1,0 +1,378 @@
+*{
+    margin: 0%;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    height: 50px;
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/**box2**/
+.add-icon{
+    display: flex;
+}
+#add-fis{
+    color: #cccccc;
+    font-size: 0.75rem;
+    margin-left: 15px;
+}
+#add-sec{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+/** box3 **/
+.nav-search{
+    display: flex;
+    width: 600px;
+    height: 45px;
+    background-color: pink;
+    border-radius: 4px;
+    justify-content: space-evenly;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+    
+}
+.nav-search :hover{
+     border: 2px solid orange;
+}
+/** box4 **/
+span{
+    font-size: 0.75rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: .85rem;
+    font-weight: 700;
+}
+/** panel**/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops{
+   width: 70%;
+   font-size: 0.85rem;
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+
+}
+.panel-deal{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.hero-section{
+    background-size: cover;
+    height: 650px;
+    width: 1520px;
+    animation-name: sideshow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    display: flex;
+}
+@keyframes sideshow {
+    5%{
+        background-image: url(bg1.jpg);
+    }
+    25%{
+        background-image: url(bg2.png);
+    }
+    50%{
+        background-image: url(bg3.jpg);
+    }
+    75%{
+        background-image: url(bg4.jpg);
+    }
+    100%{
+        background-image: url(bg5.jpg);
+    }
+    
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box1{
+    position: absolute;
+    top: 60%;
+    left: 2.5%;
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+.box1 p, .box2 p, .box3 p, .box4 p{
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.b1, .b2{
+    display: flex;
+}
+.b2{
+    margin-top: 5px;
+}
+.shop1 p, .shop2 p, .shop3 p, .shop4 p{
+   font-size: 0.8rem;
+   color:darkcyan;
+}
+.box2{
+    position: absolute;
+    top: 60%;
+    left: 26.5%;
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.box3{
+    position: absolute;
+    top: 60%;
+    left: 50.5%;
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: 600;  
+}
+.box4{
+    position: absolute;
+    top: 60%;
+    left: 74.5%;
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: 600;  
+}
+
+.bikes{
+    width: 1510px;
+    height: 250px;
+    background-color: rgb(215, 215, 215);
+    border: 5px solid rgb(215, 215, 215);
+}
+.bike1{
+    width: 1480px;
+    height: 215px;
+    background-color: white ;
+    margin: 20px 1px 1px 20px;
+}
+.bike1 p{
+   padding-left: 15px; 
+   padding-top: 15px;
+   font-weight: 600;
+}
+.bike-image{
+  display: flex;
+  gap: 1px;
+  white-space: nowrap;
+  overflow-x: auto;
+ }
+
+ .small-bus{
+    width: 1510px;
+    height: 250px;
+    background-color: rgb(215, 215, 215);
+    border: 5px solid rgb(215, 215, 215);
+}
+.business{
+    width: 1480px;
+    height: 260px;
+    background-color: white ;
+    margin: 15px 1px 1px 15px;
+    border: 5px solid rgb(215, 215, 215);
+}
+.business p{
+    padding-left: 15px; 
+    padding-top: 15px;
+    font-weight: 600;
+ }
+ .business-img{
+    display: flex;
+    gap: 2px;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 5px 10px 1px 10px;
+}
+ 
+.kitchen{
+    width: 1450px;
+    height: 270px;
+    background-color: rgb(215, 215, 215);
+    border: 5px solid rgb(215, 215, 215);
+    margin: 50px 0px 0px 20px;
+}
+.kitchen1{
+    width: 1480px;
+    height: 260px;
+    background-color: white ;
+}
+.kitchen1 p{
+    padding-left: 15px; 
+    padding-top: 15px;
+    font-weight: 600;
+ }
+ .kitchen-img{
+    display: flex;
+    gap: 2px;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 5px 10px 1px 10px;
+}
+.beauty{
+    width: 1450px;
+    height: 270px;
+    background-color: rgb(215, 215, 215);
+    border: 5px solid rgb(215, 215, 215);
+    margin: 50px 0px 0px 20px;
+}
+.beauty1{
+    width: 1480px;
+    height: 260px;
+    background-color: white ;
+}
+
+.beauty1 p{
+    padding-left: 15px; 
+    padding-top: 15px;
+    font-weight: 600;
+}
+.beauty1 img{
+    display: flex;
+    gap: 2px;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 5px 10px 1px 10px;
+}
+/* footer*/
+footer{
+    background-color: #333333;
+    color: white;
+}
+.amazon-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-india{
+    margin-top: 25px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+#logo-india img{
+    padding-top: 5px;
+}
+.footer{
+    display: flex;
+}
+.foot1{
+    margin-top: 100px;
+    margin-left: 200px;
+    line-height: 30px;
+}
+.foot2{
+    margin-top: 100px;
+    margin-left: 150px;
+    line-height: 30px;
+}
+.foot3{
+    margin-top: 100px;
+    margin-left: 150px;
+    line-height: 30px;
+}
+.foot4{
+    margin-top: 100px;
+    margin-left: 150px;
+    line-height: 30px;
+}
+footer{
+    background-color: #131A22;
+}
+.footer1{
+    background-color: #131A22;
+    color: #999999;
+    font-size: 0.85rem;
+    display: flex;
+}
+.f1{
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.f2{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.f3{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.f4{
+    margin-top: 50px;
+    margin-left: 150px;
+}
