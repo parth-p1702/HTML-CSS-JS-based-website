@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    background-color: #2874f0;
+    height: 60px;
+    display: flex;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 3vw;
+    height: 45px;
+    background-color: #2874f0;
+}
+
+.navbar>input {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+    border: none;
+    width: 500px;
+    height: 35px;
+    padding: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.login_button {
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    width: 100px;
+    padding: 5px;
+    color: rgb(36, 180, 216);
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.navbar>a {
+    margin-bottom: auto;
+    margin-top: auto;
+    background-color: #2874f0;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px !important;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+/*  Header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 13px;
+}
+
+.smallImg {
+    width: 5vw;
+    background-color: white;
+}
+
+.smallPara {
+    background-color: white;
+}
+
+
+/* */
+
+.electronics {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.electronics-subclass {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.displayimg {
+    padding: 20px;
+    width: 15vw;
+    height: 15vw;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.displayblack {
+    padding: 4px;
+    color: black;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.displaygreen {
+    color: green;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.displaygrey {
+    padding: 4px;
+    color: grey;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.eletronics-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.eletronics-heading>h1 {
+    font-size: 2vw;
+    padding: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.eletronics-heading>button {
+    width: 6vw;
+    padding: 7px;
+    color: white;
+    background-color: #2874f0;
+    border: none;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.footer {
+    background-color: #172337;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-h3 {
+    padding-bottom: 10px;
+    color: grey;
+    font-size: 1vw;
+}
+
+.footer-p {
+    color: white;
+    font-size: 0.8vw;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+hr {
+    color: grey;
+    background-color: grey;
+    width: 100%;
+    padding: 0;
+
+}
