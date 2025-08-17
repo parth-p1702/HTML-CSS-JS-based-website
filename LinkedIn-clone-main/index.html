@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar starts here -->
+    <nav class="navbar bg-body-tertiary shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
+            </a>
+            <ul class="navbar justify-content-end navbar-custom">
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Discover</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#people">People</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#learning">Learning</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#footer">Jobs</a>
+                </li>
+                <span class="ms-4 ">Join now</span>
+                <div class=" ms-5 ">
+                    <button type="button" class="btn btn-outline-primary rounded-pill button-custom ">Sign In</button>
+                </div>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <!-- content starts here -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class=" col-lg-6 col-md-12 content-div">
+                <h1 class="display-5" style="color: #8f5849;">Welcome to your <br>professional community. </h1>
+                <div class="form-input mt-4">
+                    <input class="form-control border-3" id="email" style="width: 70%;" type="text"
+                       autocomplete="off" placeholder="Email or phone number" aria-label="default input example">
+                    <input class="form-control border-3 mt-2" id="password" style="width: 70%;" type="password" placeholder="Password"
+                        aria-label="default input example">
+                    <p class="mt-2 forgot-pass">Forgot password?</p>
+                    <div>
+                        <button onclick="signInAlert()" style="width: 70%;" type="button"
+                            class="btn btn-primary rounded-pill p-3">Sign
+                            in</button>
+                        <p> ___________________________or____________________________</p>
+                        <button style="width: 70%;" type="button"
+                            class="btn btn-light rounded-pill p-3 border border-dark sign-in">Sign in with Google</button>
+                        <button style="width: 70%;" type="button"
+                            class="btn btn-light mt-3 rounded-pill p-3 border border-dark">New to LinkedIn? Join
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="./images/home-banner.svg" width="700" height="560" class="homeImg" alt="home-banner">
+
+            </div>
+        </div>
+    </div>
+    <!-- people section starts here -->
+
+    <div class="container" id="people">
+        <div class="row">
+            <div class="col-lg-6 col-md-12  mt-5 first-column">
+                <h4 class="display-5" style="color: #8f5849;">Let the right people know <br> you’re open to work</h4>
+                <p class="display-5 people-custom">With the Open To Work feature, you can <br> privately tell recruiters
+                    or publicly share <br> with the LinkedIn community that you are looking for new job opportunities.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 second-column">
+                <div class="ms-5">
+                    <img style="width: 75%;" src="./images/people-banner.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- join our colleagues starts here -->
+
+    <div class="container-fluid" id="learning">
+        <div class="row">
+            <div class="col-lg-12 ps-5">
+                <p class="display-5 colleagues-custom">Join your colleagues, classmates, and friends on <br> LinkedIn.
+                </p>
+                <button type="button" class="btn btn-primary rounded-pill button-custom mt-3">Get started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer starts here -->
+    <footer class="bg-dark text-white pt-5 pb-5 footer-custom" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-section">
+                        <ul>
+                            <li><strong> General</strong></li>
+                            <li>Sign Up</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Help center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-section">
+                        <ul>
+                            <li><strong> Browse LinkedIn</strong></li>
+                            <li>Learning</li>
+                            <li>Jobs</li>
+                            <li>Salary</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-section">
+                        <ul>
+                            <li><strong> Business Solutions</strong></li>
+                            <li>Talent</li>
+                            <li>Marketing</li>
+                            <li>Sales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-custom text-center fs-">@Chirag.B</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script>
+        // handling error user enter nothing in input box
+        function signInAlert() {
+            let email=document.getElementById("email")
+            let password=document.getElementById("password")
+            if(email.value==="" && password.value===""){
+                alert("Enter your email to Sign In")
+            }else{
+                alert("Welcome " + email.value)
+                email.value=""
+                password.value=""
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
