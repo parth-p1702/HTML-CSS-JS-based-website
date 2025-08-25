@@ -1,2 +1,2 @@
 # HTML-CSS-JS-based-website
-Useful for freshers
+Useful for freshers and mobile first website 
