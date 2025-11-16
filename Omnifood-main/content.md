@@ -107,9 +107,9 @@ I got Omnifood for the whole family, and it frees up so much time! Plus, everyth
 
 ### Contact information
 
-Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107
-Phone: 415-201-6370
-Email: hello@omnifood.com
+Address: Gujarat
+Phone: 123-456-7890
+Email: 
 
 Social profiles: instagram, facebook, twitter [links to them not available yet]
 
